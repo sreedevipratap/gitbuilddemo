@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.seldemo</groupId>
+  <artifactId>com.seldemo.selenium</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>selenium demo</name>
+  <description>selenium demo</description>
+  
+  <properties>
+  <suiteXmlFile>src/main/resources/tesng.xml</suiteXmlFile>
+  </properties>
+  
+  <dependencies>
+  <dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.13.1</version>
+  </dependency>
+  <dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.13.1</version>
+  </dependency>
+  </dependencies>
+  <build>
+  <plugins>
+  <plugin>
+ 			 <groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.7.0</version>
+  </plugin>
+  <plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-surefire-plugin</artifactId>
+  			<version>2.20.1</version>
+  			<configuration>
+  			<SuiteXmlFiles>
+  			<SuiteXmlFile>${suiteXmlFile}</SuiteXmlFile>
+  			</SuiteXmlFiles>
+  			</configuration>
+  </plugin>
+  </plugins>
+  </build>
+</project>
