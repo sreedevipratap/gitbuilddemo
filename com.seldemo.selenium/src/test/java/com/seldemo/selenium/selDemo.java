@@ -6,7 +6,7 @@ public class selDemo {
 	@Test
 	public void PrintSel()
 	{
-		System.out.println("This is a selenium maven jenkins git demo");
+		System.out.println("This is a selenium maven jenkins git demo 1");
 	}
 
 }
